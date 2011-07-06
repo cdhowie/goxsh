@@ -318,8 +318,7 @@ class GoxSh(object):
         properties = []
         if bool(int(order[u"dark"])):
             properties.append(u"dark")
-        if order[u"status"] == u"2":
-            properties.append(u"not enough funds")
+        properties.append(order[u"real_status"])
         print "[%s] %s %s: %sBTC @ %sUSD%s" % (timestamp, kind, order[u"oid"], order[u"amount"], order[u"price"], (" (" + ", ".join(properties) + ")" if properties else ""))
         
     def __unknown(self, cmd):
