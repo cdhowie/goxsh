@@ -417,7 +417,7 @@ class GoxSh(object):
         print u"Last: %s" % ticker[u"last"]
         print u"Buy: %s" % ticker[u"buy"]
         print u"Sell: %s" % ticker[u"sell"]
-        print u"Hight: %s" % ticker[u"high"]
+        print u"High: %s" % ticker[u"high"]
         print u"Low: %s" % ticker[u"low"]
         print u"Volume: %s" % ticker[u"vol"]
 
